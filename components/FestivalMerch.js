@@ -20,7 +20,7 @@ const MERCH = [
     name: "T-Shirt + Cap",
     desc: "Get both and rep your clan in style.",
     price: "GH₵130",
-    image: "/photos/festival/merch-bundle.jpg.PNG",
+    image: "/photos/festival/merch-bundle.jpeg.PNG",
     sizes: ["S", "M", "L", "XL", "XXL"],
     badge: "Best Value",
   },
