@@ -4,7 +4,7 @@ import { appendRowToSheet } from "@/lib/sheets";
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 const FESTIVAL_INBOX =
-  process.env.FESTIVAL_INBOX || process.env.RESERVATION_INBOX || "DrillTours@gmail.com";
+  process.env.FESTIVAL_INBOX || process.env.RESERVATION_INBOX || "drilltours@gmail.com";
 
 // See app/api/reserve/route.js for the full explanation of why this defaults to Resend's
 // sandbox sender rather than a @drilltours.com address.
