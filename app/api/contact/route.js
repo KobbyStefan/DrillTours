@@ -3,7 +3,7 @@ import { appendRowToSheet } from "@/lib/sheets";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-const CONTACT_INBOX = process.env.CONTACT_INBOX || "DrillTours@gmail.com";
+const CONTACT_INBOX = process.env.CONTACT_INBOX || "drilltours@gmail.com";
 
 // See app/api/reserve/route.js for the full explanation: drilltours.com isn't verified in
 // Resend yet, so sending from a @drilltours.com address fails silently. Default to Resend's
