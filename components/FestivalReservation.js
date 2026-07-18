@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
 
-const CLANS = ["Adi Biawɛ", "Lomo Biawɛ", "Ka Biawɛ", "Other"];
+const CLANS = ["Adi Biawɛ", "Lomo Biawɛ", "Ka Biawɛ", "Tepker Biawɛ", "Dangme Biawɛ", "Kudzragbe", "Korgbor", "Ohuewem", "Other"];
 const ITEMS = ["T-Shirt — GH₵85", "Cap — GH₵60", "T-Shirt + Cap Bundle — GH₵130"];
 const SIZES = ["S", "M", "L", "XL", "XXL"];
-const PICKUP_LOCATIONS = ["Mohee Food Court", "Drill Tours Office, Accra"];
+const PICKUP_LOCATIONS = ["Mohee Food Court", "Okoli FM", "Radio Ada", "Eagle FM", "Drill Tours Office, Accra", "Festival Grounds"];
 
 const initialForm = {
   name: "",
