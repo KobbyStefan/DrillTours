@@ -29,7 +29,7 @@ const MERCH = [
 const PERKS = [
   ["Pick up at the festival venue", "No shipping — collect at Mohee Food Court"],
   ["Payment on pickup", "Reserve now, pay when you collect"],
-  ["Wear it with pride", "Officially licensed Asafotufiami 2026 gear"],
+  ["Wear it with pride", "Officially made for your Asafotufiami vibes"],
   ["Support our culture", "Proceeds help fund festival week programming"],
 ];
 
