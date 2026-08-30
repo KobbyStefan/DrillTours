@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-// Rep Your Clan Concert — 1 Aug 2026, 11:00, Mohee Food Court, Sege-Ada.
+// Rep Your Clan Concert — 1 Aug 2027, 11:00, Mohee Food Court, Sege-Ada.
 // Ghana runs on GMT year-round (no DST), so this is written as a fixed
 // UTC instant rather than relying on the visitor's local timezone parsing.
 export const FESTIVAL_DATE_ISO = "2026-08-01T11:00:00Z";
