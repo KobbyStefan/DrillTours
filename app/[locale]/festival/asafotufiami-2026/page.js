@@ -11,9 +11,9 @@ import FestivalFlyer from "@/components/FestivalFlyer";
 import FestivalFAQ from "@/components/FestivalFAQ";
 
 export const metadata = {
-  title: "Asafotufiami Festival 2026 — Rep Your Clan Concert | Drill Tours Ltd",
+  title: "Asafotufiami Festival 2027 | Drill Tours Gh",
   description:
-    "Asafotufiami Festival 2026's Rep Your Clan Concert — 1st August, Mohee Food Court, Sege-Ada, 11 AM till late. Reserve official merchandise or book the full festival + tour package with Drill Tours.",
+    "Asafotufiami Festival 2027 — 8th to 13th August, from Sege to Big-Ada, all the way to Ada-Foah. Reserve your elegant merchandise or book the full festival + tour package with Drill Tours.",
 };
 
 export default function AsafotufiamiFestivalPage() {
