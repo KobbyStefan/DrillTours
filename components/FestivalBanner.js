@@ -74,7 +74,7 @@ export default function FestivalBanner() {
           </div>
           <img
             src="/photos/festival/asafotufiami-2026-flyer.jpg"
-            alt="Asafotufiami Festival 2026 — Rep Your Clan Concert official flyer, 1st August 2026, Mohee Food Court, Sege-Ada, 11:00 AM till late"
+            alt="Asafotufiami Festival 2027 , 1st August 2027, Mohee Food Court, Sege-Ada, 11:00 AM till late"
             className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-500"
             loading="lazy"
           />
