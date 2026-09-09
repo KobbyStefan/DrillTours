@@ -1,3 +1,5 @@
+import { FLYER } from "@/lib/festival";
+
 export default function FestivalFlyer() {
   return (
     <section className="py-20 sm:py-24 border-b border-neutral-900">
@@ -6,18 +8,20 @@ export default function FestivalFlyer() {
           Share The Word
         </div>
         <h2 className="font-display text-[clamp(28px,3.6vw,38px)] leading-tight mb-8">
-          The official flyer.
+          {FLYER.isCurrentEdition
+            ? "The official flyer."
+            : `The ${FLYER.edition} flyer.`}
         </h2>
         <div className="border border-neutral-800">
           <img
-            src="/photos/festival/asafotufiami-2026-flyer.jpg"
-            alt="Asafotufiami Festival 2026 — Rep Your Clan Concert official flyer"
+            src={FLYER.src}
+            alt={FLYER.alt}
             className="w-full h-auto"
           />
         </div>
         <a
-          href="/photos/festival/asafotufiami-2026-flyer.jpg"
-          download="asafotufiami-2026-rep-your-clan-flyer.jpg"
+          href={FLYER.src}
+          download={FLYER.downloadName}
           className="inline-flex items-center gap-2 border border-gold text-gold px-6 py-3 text-xs uppercase tracking-widest hover:bg-gold hover:text-ink transition-colors mt-8"
         >
           Save Flyer

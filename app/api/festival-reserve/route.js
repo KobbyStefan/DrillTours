@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { appendRowToSheet } from "@/lib/sheets";
+import { YEAR } from "@/lib/festival";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
@@ -48,7 +49,7 @@ export async function POST(req) {
           replyTo: email,
           subject: `New festival gear reservation — ${name} (${item})`,
           html: `
-            <h2>Asafotufiami Festival 2026 — Gear Reservation</h2>
+            <h2>Asafotufiami Festival ${YEAR} — Gear Reservation</h2>
             <p><strong>Name:</strong> ${escapeHtml(name)}</p>
             <p><strong>Email:</strong> ${escapeHtml(email)}</p>
             <p><strong>WhatsApp / Phone:</strong> ${escapeHtml(whatsapp)}</p>

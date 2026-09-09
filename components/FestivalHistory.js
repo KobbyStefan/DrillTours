@@ -21,15 +21,15 @@ export default function FestivalHistory() {
             formally in 1937 to draw the Ada diaspora home each year.
           </p>
           <p>
-            Held every first week of August, the festival runs from a candlelight procession and
+            Held every August, the festival runs from a candlelight procession and
             homecoming float through a ceremonial march to Luhuese, mock battle re-enactments,
             and a grand durbar where the Ada chiefs parade in state. It's as much a family reunion
             as a commemoration — a chance for sons and daughters scattered across Ghana and the
             diaspora to reconnect with home, and with each other.
           </p>
           <p>
-            The <span className="text-ivory">Rep Your Clan Concert</span> opens festival week on
-            the coast at Sege — a night built around the founding clans of the Ada state,
+            The <span className="text-ivory">Rep Your Clan Concert</span> opens the festival
+            season on the coast at Sege — a night built around the founding clans of the Ada state,
             Adibiawe, Lomobiawe, and Kabiawe among them. Expect live drumming, DJ sets, clan
             processions, and a crowd proud to name where they come from.
           </p>

@@ -4,9 +4,10 @@ import { Link } from "@/i18n/routing";
 import Mark from "./Mark";
 import Wordmark from "./Wordmark";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { PATH } from "@/lib/festival";
 
 const NAV_LINKS = [
-  ["Festival", "/festival/asafotufiami-2026"],
+  ["Festival", PATH],
   ["About", "/about"],
   ["Destinations", "/destinations"],
   ["Packages", "/packages"],
