@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { PACKAGES } from "./Packages";
+import { YEAR } from "@/lib/festival";
 
 /**
  * Homepage teaser: shows the first 4 packages, links through to the full
@@ -34,7 +35,7 @@ export default function PackagesTeaser() {
           className="flex items-center gap-3 mb-10 text-[13px] text-neutral-300 hover:text-gold transition-colors w-fit"
         >
           <span className="bg-gold text-ink text-[10.5px] tracking-wide px-2.5 py-1 uppercase font-medium">
-            Aug 2026
+            Aug {YEAR}
           </span>
           Featured this season: the Asafotufiami Festival, Ada →
         </Link>

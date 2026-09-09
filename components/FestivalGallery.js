@@ -1,4 +1,5 @@
 import Plate from "./Plate";
+import { YEAR } from "@/lib/festival";
 
 const MOMENTS = [
   { variant: "savanna", label: "Clan Processions" },
@@ -20,8 +21,8 @@ export default function FestivalGallery() {
           </h2>
         </div>
         <p className="text-[13px] text-neutral-500 mb-10 max-w-[560px]">
-          Illustrative artwork for now — real photography from the 2026 edition goes here
-          once the festival wraps.
+          Illustrative artwork for now — real photography from the {YEAR} edition goes
+          here once the festival wraps.
         </p>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

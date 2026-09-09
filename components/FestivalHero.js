@@ -1,5 +1,14 @@
 import { Link } from "@/i18n/routing";
 import FestivalCountdown from "./FestivalCountdown";
+import {
+  YEAR,
+  CONCERT_DATE,
+  CONCERT_DATE_SHORT,
+  CONCERT_TIME,
+  CONCERT_VENUE,
+  FLYER,
+  FLYER_BADGE,
+} from "@/lib/festival";
 
 export default function FestivalHero() {
   return (
@@ -12,7 +21,7 @@ export default function FestivalHero() {
           <h1 className="font-display font-normal leading-[1.02] tracking-tight text-[clamp(36px,5.4vw,64px)]">
             Asafotufiami
             <br />
-            <span className="italic text-gold font-light">Festival 2026.</span>
+            <span className="italic text-gold font-light">Festival {YEAR}.</span>
           </h1>
           <p className="mt-3 font-display text-xl sm:text-2xl text-neutral-300">
             Rep Your Clan Concert
@@ -21,15 +30,15 @@ export default function FestivalHero() {
           <dl className="flex flex-wrap gap-x-9 gap-y-4 mt-8 font-mono text-[13px]">
             <div>
               <dt className="text-neutral-500 text-[10.5px] tracking-[1.5px] uppercase mb-1">Date</dt>
-              <dd className="text-ivory">1st August, 2026</dd>
+              <dd className="text-ivory">{CONCERT_DATE}</dd>
             </div>
             <div>
               <dt className="text-neutral-500 text-[10.5px] tracking-[1.5px] uppercase mb-1">Venue</dt>
-              <dd className="text-ivory">Mohee Food Court, Sege — Ada</dd>
+              <dd className="text-ivory">{CONCERT_VENUE}</dd>
             </div>
             <div>
               <dt className="text-neutral-500 text-[10.5px] tracking-[1.5px] uppercase mb-1">Time</dt>
-              <dd className="text-ivory">11:00 AM till late</dd>
+              <dd className="text-ivory">{CONCERT_TIME}</dd>
             </div>
           </dl>
 
@@ -51,7 +60,9 @@ export default function FestivalHero() {
               Reserve Merchandise
             </Link>
             <Link
-              href="/reserve?destination=Asafotufiami+Festival%2C+Ada&pkg=Cultural+Experiences&notes=Interested+in+the+Rep+Your+Clan+Concert%2C+1+Aug+2026."
+              href={`/reserve?destination=Asafotufiami+Festival%2C+Ada&pkg=Cultural+Experiences&notes=${encodeURIComponent(
+                `Interested in the Rep Your Clan Concert, ${CONCERT_DATE_SHORT}.`
+              )}`}
               className="inline-flex items-center border border-ivory text-ivory px-7 py-3.5 text-xs uppercase tracking-widest hover:bg-ivory hover:text-ink transition-colors"
             >
               Book Festival + Tour
@@ -61,11 +72,11 @@ export default function FestivalHero() {
 
         <div className="relative border border-neutral-800">
           <div className="absolute top-4 left-4 z-[1] bg-gold text-ink text-[11px] tracking-wide px-3 py-1.5 uppercase font-medium">
-            Official Flyer
+            {FLYER_BADGE}
           </div>
           <img
-            src="/photos/festival/asafotufiami-2026-flyer.jpg"
-            alt="Asafotufiami Festival 2026 — Rep Your Clan Concert official flyer, 1st August 2026, Mohee Food Court, Sege-Ada, 11:00 AM till late"
+            src={FLYER.src}
+            alt={FLYER.alt}
             className="w-full h-auto"
           />
         </div>

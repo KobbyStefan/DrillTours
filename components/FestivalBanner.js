@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import FestivalCountdown from "./FestivalCountdown";
+import { YEAR, PATH, FLYER, FLYER_BADGE } from "@/lib/festival";
 
 /**
  * Premium seasonal advertisement for the Asafotufiami Festival's "Rep Your
@@ -30,7 +31,7 @@ export default function FestivalBanner() {
             Festival Week · Ada, Greater Accra
           </div>
           <h2 className="font-display leading-[1.05] text-[clamp(28px,4vw,44px)]">
-            Asafotufiami 2026 —<br />
+            Asafotufiami {YEAR} —<br />
             <span className="italic text-gold font-light">Rep Your Clan Concert.</span>
           </h2>
           <p className="mt-5 text-[14.5px] text-neutral-300 leading-relaxed max-w-[460px]">
@@ -45,7 +46,7 @@ export default function FestivalBanner() {
 
           <div className="flex gap-3 sm:gap-4 mt-9 flex-wrap">
             <Link
-              href="/festival/asafotufiami-2026#merchandise"
+              href={`${PATH}#merchandise`}
               className="inline-flex items-center border border-gold text-gold px-6 py-3 text-xs uppercase tracking-widest hover:bg-gold hover:text-ink transition-colors"
             >
               Reserve Merchandise
@@ -66,15 +67,15 @@ export default function FestivalBanner() {
         </div>
 
         <Link
-          href="/festival/asafotufiami-2026"
+          href={PATH}
           className="group relative block border border-neutral-800 hover:border-gold/50 transition-colors overflow-hidden"
         >
           <div className="absolute top-4 left-4 z-[1] bg-gold text-ink text-[11px] tracking-wide px-3 py-1.5 uppercase font-medium">
-            Official Flyer
+            {FLYER_BADGE}
           </div>
           <img
-            src="/photos/festival/asafotufiami-2026-flyer.jpg"
-            alt="Asafotufiami Festival 2027 , 1st August 2027, Mohee Food Court, Sege-Ada, 11:00 AM till late"
+            src={FLYER.src}
+            alt={FLYER.alt}
             className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-500"
             loading="lazy"
           />

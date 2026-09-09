@@ -1,3 +1,5 @@
+import { YEAR } from "@/lib/festival";
+
 const MERCH = [
   {
     id: "tshirt",
@@ -45,7 +47,7 @@ export default function FestivalMerch() {
             Show your pride. Order ahead.
           </h2>
           <p className="mt-4 text-[14.5px] text-neutral-600 leading-relaxed">
-           RepYourClan Asafotufiami Festival 2026 T-shirts and caps, reserved in advance for
+           RepYourClan Asafotufiami Festival {YEAR} T-shirts and caps, reserved in advance for
             pickup at the venue — no shipping, no waiting in line on the day.
           </p>
         </div>
@@ -64,7 +66,7 @@ export default function FestivalMerch() {
               <div className="aspect-[4/3] overflow-hidden bg-neutral-900">
                 <img
                   src={item.image}
-                  alt={`Asafotufiami Festival 2026 official ${item.name}`}
+                  alt={`Asafotufiami Festival ${YEAR} official ${item.name}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

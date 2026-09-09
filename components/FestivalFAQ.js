@@ -1,15 +1,16 @@
 "use client";
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
+import { CONCERT_DATE, FESTIVAL_WEEK } from "@/lib/festival";
 
 const FAQS = [
   {
     q: "What is Asafotufiami?",
-    a: "The annual homecoming festival of the Ada people in Greater Accra, held every first week of August. It commemorates the ancestral wars fought to settle the Ada state, and today it's mainly a celebration — processions, drumming, a chiefs' durbar, and a reunion for Ada sons and daughters at home and abroad.",
+    a: "The annual homecoming festival of the Ada people in Greater Accra, held every August. It commemorates the ancestral wars fought to settle the Ada state, and today it's mainly a celebration — processions, drumming, a chiefs' durbar, and a reunion for Ada sons and daughters at home and abroad.",
   },
   {
     q: "What is the Rep Your Clan Concert?",
-    a: "A concert opening festival week at Mohee Food Court, Sege, on 1st August 2026 — live drumming, DJ sets, and clan processions celebrating Adibiawe, Lomobiawe, Kabiawe, and the wider Ada community.",
+    a: `A concert opening the festival season at Mohee Food Court, Sege, on ${CONCERT_DATE} — live drumming, DJ sets, and clan processions celebrating Adibiawe, Lomobiawe, Kabiawe, and the wider Ada community. The traditional programme follows from ${FESTIVAL_WEEK}.`,
   },
   {
     q: "Is entry free?",

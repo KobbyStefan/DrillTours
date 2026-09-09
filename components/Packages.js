@@ -1,4 +1,11 @@
 import { Link } from "@/i18n/routing";
+import {
+  EDITION,
+  PATH,
+  CONCERT_DATE,
+  FESTIVAL_WEEK_SHORT,
+  FLYER,
+} from "@/lib/festival";
 
 const PACKAGES = [
   { name: "Heritage Tours", desc: "Castles, forts, and the memory routes of the transatlantic story." },
@@ -27,26 +34,26 @@ export default function Packages() {
         </div>
 
         {/* Featured seasonal package — Asafotufiami Festival, Ada. The Rep Your
-            Clan Concert (confirmed against the official flyer) opens festival
-            week on 1 August 2026; the traditional durbar and wider festival
-            programme continue through the following week per the Ada
-            Traditional Council's own announcements. Update FESTIVAL_DATE
-            each year once the council confirms the new date. */}
+            Clan Concert opens the festival season; the traditional durbar and
+            wider festival programme continue the following week per the Ada
+            Traditional Council's own announcements. All of these dates come
+            from lib/festival.js — update them there once the council confirms
+            the new year's programme. */}
         <Link
-          href="/festival/asafotufiami-2026"
+          href={PATH}
           className="group block relative overflow-hidden mb-16 border border-neutral-800 hover:border-gold/50 transition-colors"
         >
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr]">
             <div className="relative h-[220px] md:h-full md:min-h-[260px] overflow-hidden">
               <img
-                src="/photos/festival/asafotufiami-2026-flyer.jpg"
-                alt="Asafotufiami Festival 2026 — Rep Your Clan Concert"
+                src={FLYER.src}
+                alt={`Asafotufiami Festival ${FLYER.edition} — Rep Your Clan Concert`}
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-ink/10" />
               <div className="absolute top-5 left-5 bg-gold text-ink text-[11px] tracking-wide px-3 py-1.5 uppercase font-medium">
-                Aug 1–9, 2026
+                {FESTIVAL_WEEK_SHORT}
               </div>
             </div>
             <div className="p-8 md:p-10 flex flex-col justify-center">
@@ -59,8 +66,8 @@ export default function Packages() {
               <p className="text-sm text-neutral-400 leading-relaxed mb-5 max-w-[480px]">
                 The Ada people's annual homecoming on the Greater Accra coast opens with the
                 Rep Your Clan Concert at Mohee Food Court, Sege — live drumming, clan
-                processions, and music from 1 August. The traditional durbar of chiefs and
-                the wider 89th-edition programme continue through the week.
+                processions, and music on {CONCERT_DATE}. The traditional durbar of chiefs
+                and the wider {EDITION}-edition programme continue the following week.
               </p>
               <span className="text-xs tracking-wide text-gold border-b border-gold/40 w-fit group-hover:border-gold transition-colors">
                 See festival details & reserve →

@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 
-// Rep Your Clan Concert — 1 Aug 2027, 11:00, Mohee Food Court, Sege-Ada.
-// Ghana runs on GMT year-round (no DST), so this is written as a fixed
-// UTC instant rather than relying on the visitor's local timezone parsing.
-export const FESTIVAL_DATE_ISO = "2026-08-01T11:00:00Z";
+// Rep Your Clan Concert date lives in lib/festival.js alongside the rest of
+// the edition's facts — re-exported here so existing importers keep working.
+import { CONCERT_DATE_ISO } from "@/lib/festival";
+
+export const FESTIVAL_DATE_ISO = CONCERT_DATE_ISO;
 
 function getTimeLeft() {
   const diff = new Date(FESTIVAL_DATE_ISO).getTime() - Date.now();
