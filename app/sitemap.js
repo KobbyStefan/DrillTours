@@ -1,4 +1,5 @@
 import { PATH as FESTIVAL_PATH } from "@/lib/festival";
+import { FESTIVALS } from "@/lib/festivals";
 
 export default function sitemap() {
   const baseUrl = "https://drilltours.com";
@@ -30,11 +31,23 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/festival`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}${FESTIVAL_PATH}`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
+    ...FESTIVALS.map((f) => ({
+      url: `${baseUrl}/festival/${f.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    })),
     {
       url: `${baseUrl}/gallery`,
       lastModified: now,

@@ -4,10 +4,8 @@ import { Link } from "@/i18n/routing";
 import Mark from "./Mark";
 import Wordmark from "./Wordmark";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { PATH } from "@/lib/festival";
-
 const NAV_LINKS = [
-  ["Festival", PATH],
+  ["Festivals", "/festival"],
   ["About", "/about"],
   ["Destinations", "/destinations"],
   ["Packages", "/packages"],
@@ -45,7 +43,7 @@ export default function Nav() {
               href={href}
               className="flex items-center gap-1.5 text-[13px] tracking-wide text-neutral-300 hover:text-ivory transition-colors"
             >
-              {label === "Festival" && (
+              {label === "Festivals" && (
                 <span className="w-1.5 h-1.5 rounded-full bg-gold" aria-hidden="true" />
               )}
               {label}
